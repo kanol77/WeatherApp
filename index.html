@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <script src="script.js" defer></script>
+    <link rel="icon" href="icon.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <dialog class="modal">
+        <center>Put in your position:</center> <br>
+        Latitude: <input type="text" class="lat"> &#176; <br> 
+        Longtitude: <input type="text" class="long"> &#176; <br> <br>
+        <input type="button" class="button1" value="Submit">
+    </dialog>
+
+    <dialog class="modalA">
+        <center>Attributions:</center> <br>
+        Title icon by: <a href="https://www.flaticon.com/free-icons/cloud" title="cloud icons">Freepik - Flaticon</a><br>
+        Wind on compass icon by: <a href=https://www.pngall.com/wind-png/download/52386 target="_blank">Wind Image</a><br>
+        Sun icon by: <a href="https://www.flaticon.com/free-icons/sun" title="sun icons">Pixel perfect - Flaticon</a><br>
+        Snowflake, Wind and Cloud icon by: <a href="https://www.flaticon.com/free-icons/snow" title="snow icons">bqlqn - Flaticon</a><br>
+        Snowflake animation by: <a href="https://codepen.io/nikitat206/pen/RwxZJPZ" title="Snowflake animation">nikitat206 - codepen</a><br>
+        <a href="https://open-meteo.com/en"><h2>Using Open-Meteo API</h2></a> <br> 
+        <input type="button" value="Close" alt="close" class="closeButton">
+    </dialog>
+
+    <header>
+        <a class="header-link" href="index.html">
+        <img id="icon" src="icon.png"></img>
+        <h2>Weather App</h2>
+        </a>
+    </header>
+
+        <div class="d-geo"></div>
+        <article>
+            <div class="w-daily"></div>
+        </article>
+
+        <div class="w-now"></div>
+
+    <footer>
+        <h3>Site created by: Kanol77</h3> &nbsp; &nbsp; 
+        <input type="button" class="button2" value="Show Attributions">
+    </footer>
+    
+</body>
+</html>

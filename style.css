@@ -1,0 +1,327 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    zoom: 91%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    background-color: black;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    background-color: rgb(49, 18, 254);
+    border-radius: 0px 0px 20px 20px;
+}
+
+.header-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+}
+
+#icon{
+    width: 4em;
+    margin-right: 5px;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(204, 255, 0);
+}
+
+a:hover{
+    transition: 0.5s;
+    color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 20px black;
+    border-radius: 20px;
+}
+
+article{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.picked-day{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  flex-wrap: wrap;
+}
+
+.d-geo{
+    color: white;
+    width: 98.5%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border: dotted 5px;
+    margin-top: 1rem;
+    margin-right: 2rem;
+    margin-bottom: 1.3rem;
+    margin-left: 1rem;
+    box-shadow: 0px 0px 10px 10px rgba(255, 255, 254, 80);
+    
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: auto;
+    background-color: rgb(49, 18, 254);
+    color: rgb(204, 255, 0);
+    border-radius: 20px 20px 0px 0px;
+}
+
+.w-now{
+    max-height: 100%;
+    color: white;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid rgb(179, 0, 0);
+    padding: 5px;
+    box-shadow: 0px 0px 5px 5px rgba(255, 35, 0, 1);
+}
+
+.now-icons{
+  margin: 10px;
+}
+
+.icons{
+  width: 5em;
+  height: 5em;
+}
+
+.compass{
+  width: 20rem;
+  height: 20rem;
+}
+
+.square{
+    text-align: center;
+    justify-content: center;
+    float: left;
+    border: 3px solid rgb(191, 255, 0);
+    width: 15rem;
+    padding: 5px;
+    margin: 1rem;
+    box-shadow: 0px 0px 5px 5px rgb(166, 255, 0);
+}
+
+.day-square{
+    text-align: center;
+    justify-content: center;
+    float: left;
+    border: 3px solid rgb(191, 255, 0);
+    width: 15rem;
+    padding: 5px;
+    margin: 1rem;
+    box-shadow: 0px 0px 5px 5px rgb(166, 255, 0);
+}
+
+.square:hover{
+  transition: 1s;
+  background-color: rgb(116, 155, 38);
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.day-square:hover{
+  transition: 1s;
+  background-color: rgb(116, 155, 38);
+  border-radius: 30px;
+}
+
+.modal{
+  justify-content: center;
+  text-align: center;
+  font-size: xx-large;
+}
+.modalA{
+  justify-content: center;
+  text-align: center;
+  font-size: x-large;
+}
+
+dialog > a{
+  color: red;
+}
+
+dialog > a:hover{
+  border-radius: 0px;
+  transition: none;
+  color: red;
+  text-decoration: underline;
+}
+
+.button1{
+  font-size: xx-large;
+  background-color: blue;
+  color: yellow;
+  border: 0.2rem;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.button1:hover{
+  background-color: rgb(0, 137, 137);
+  transition: 0.8s;
+}
+
+.button2{
+  font-size: x-large;
+  background-color: blue;
+  color: yellow;
+  border: 0.2rem;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.button2:hover{
+  background-color: rgb(0, 137, 137);
+  transition: 0.8s;
+}
+
+.closeButton{
+  font-size: xx-large;
+  background-color: blue;
+  color: yellow;
+  border: 0.2rem;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.closeButton:hover{
+  background-color: rgb(0, 137, 137);
+  transition: 0.8s;
+}
+
+.lat{
+  width: 5rem;
+  height: 2.5rem;
+  font-size: 2rem;
+}
+
+.long{
+  width: 5rem;
+  height: 2.5rem;
+  font-size: 2rem;
+}
+
+.snowflake {
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    transition: 20s linear;
+    opacity: 0;
+  }
+  
+  @keyframes fallen {
+    0% {
+      transform: scale(0);
+      opacity: 0;
+    }
+    10% {
+      transform: scale(.1);
+  
+      opacity: .1;
+    }
+  
+    20% {
+      transform: scale(.2);
+      opacity: .3;
+    }
+    
+    50% {
+      transform: scale(.3);
+      opacity: .6;
+    }
+  
+    85% {
+      transform: scale(1);
+      opacity: 1;
+    }
+   
+    100% {
+      transform: scale(3);
+      opacity: 0;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
